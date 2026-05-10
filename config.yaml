@@ -1,0 +1,27 @@
+cities:
+  - name: Solingen
+    latitude: 51.1765
+    longitude: 7.0833
+  - name: Düsseldorf
+    latitude: 51.2217
+    longitude: 6.7762
+  - name: Köln
+    latitude: 50.9333
+    longitude: 6.9500
+
+weather:
+  variables:
+    - temperature_2m
+    - relative_humidity_2m
+    - wind_speed_10m
+    - precipitation
+    - weather_code
+
+scheduler:
+  interval_hours: 1
+
+database:
+  path: data/weather.db
+
+exports:
+  path: exports/

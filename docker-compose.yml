@@ -1,0 +1,9 @@
+services:
+  weather-etl:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./exports:/app/exports
+      - ./config.yaml:/app/config.yaml
+    environment:
+      - PYTHONUNBUFFERED=1
